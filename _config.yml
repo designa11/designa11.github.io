@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: 준피의 개발 / 설계 로그
+email: oyoungeric@gmail.com
+author: designa11
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -48,7 +48,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://designa11.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -160,11 +160,11 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "나 배준표 ㅋ"
+    subheading: "Your awesome subheading"
+    banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

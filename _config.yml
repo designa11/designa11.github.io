@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 준피의 개발 / 설계 로그
+title: JunP's development / Design log
 email: oyoungeric@gmail.com
 author: designa11
 

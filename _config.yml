@@ -164,7 +164,7 @@ defaults:
   home:
     heading: "준피의 AI 설계 / 개발 로그 "
     subheading: "AI / SmartFactor / Backend / data_analyis"
-    banner: "./assets/images/banners/legeno2.png"
+    banner: "assets/images/banners/legeno2.png"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

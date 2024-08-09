@@ -162,9 +162,9 @@ yat:
 # Page default value
 defaults:
   home:
-    heading: "나 배준표 ㅋ"
+    heading: "준피의 AI / "
     subheading: "Your awesome subheading"
-    banner: "Your image url"
+    banner: "./images/banners/레전드사진2.png"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

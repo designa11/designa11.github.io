@@ -1,3 +1,11 @@
+---
+layout: post
+title: Numpy ex01
+subtitle: messi.jpg
+categories: Numpy
+tags: [Python, Numpy]
+---
+
 ```python
 #numpy 가지고 있는 자료형(자료구조) 이해하는 시간
 ```

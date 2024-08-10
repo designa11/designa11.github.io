@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numpy Tutorial - ex01
+title: Numpy Tutorial
 subtitle: A practical guide on using Numpy
 categories: Python
 tags: [Python, Numpy]

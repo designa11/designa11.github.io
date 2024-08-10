@@ -1,0 +1,307 @@
+---
+layout: post
+title: Python Basics - Variables and Strings
+subtitle: Understanding variables and strings in Python
+categories: Python
+tags: [Python]
+---
+
+<!-- ![image.png](c859311b-7071-4d7c-9e8e-317048d46c4f.png)
+
+![image.png](caf32fd8-af4f-4489-bb7b-2552b483cee1.png)
+
+![image.png](0338d09c-4685-4880-89ca-805a21bf6210.png) -->
+
+#### 변수
+- 프로그래밍에서는 데이터를 담을 수 있는 공간으로 변수 개념을 사용
+
+![image.png](a607dc15-5734-4e86-a421-d512965b02fd.png)
+
+
+```python
+# sum 대입 해보기
+sum([1,2,3])
+# sum = 6
+# sum
+```
+
+
+
+
+    6
+
+
+
+
+```python
+
+```
+
+![image.png](3dcf8087-9052-4611-b1fd-597664bf4726.png)
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+# sum 키워드에 6을 대입해서 기존 더하는 기능은 초기화되어버림(사라짐)
+sum([1,2,3])
+```
+
+
+
+
+    6
+
+
+
+#### 문자열 다루기
+- 문자열 정의 기호 이해하기
+- 문자열 데이터 접근하기
+- 문자열 관련 함수 사용하기
+
+
+```python
+s = "she's gone"
+# \' : escape code -> she\'s gone (기본적인 기능에서 탈출한 코드)
+print(s)
+```
+
+    she's gone
+
+
+
+```python
+# escape code
+# \'
+# \"
+# \n : 개행
+# \t : tab 만큼 띄워줌
+```
+
+
+```python
+#'',""
+#''' ''',""" """ = 주석
+#두 번째의 경우에는 엔터를 쳤을 때 문자열 내부로 인식이 가능하다.
+```
+
+
+```python
+print("안녕하세요 \n배준표입니다.")
+# print 문 안에 \n가 있어야 적용이 됨.
+```
+
+    안녕하세요 
+    배준표입니다.
+
+
+
+```python
+print("""안녕하세요
+배준표입니다.""")
+```
+
+    안녕하세요
+    배준표입니다.
+
+
+- 문자열 데이터 접근 방법: 인덱싱(indexing), 슬라이싱(slicing)
+
+![image.png](351117fc-09d6-4201-b5b1-1e2f8d2e69d8.png)
+
+- 문자열 포매팅 기법: 문자열 내부 문자를 초기화하는 방법
+
+![image.png](c6d4ba16-149c-45c7-a163-56096a46597e.png)
+
+![image.png](d719a305-1a8a-4aff-86b0-f2af6e260fea.png)
+
+
+```python
+# 외부 라이브러리
+from datetime import datetime
+current_time = datetime.now()
+h = current_time.hour
+m = current_time.minute
+s = current_time.second
+print(h,m,s)
+ment = f"실행 당시 현재 시간은 {h}시 {m}분 {s}초입니다."
+print(ment)
+```
+
+    16 14 22
+    실행 당시 현재 시간은 16시 14분 22초입니다.
+
+
+![image.png](ca9f43c7-360a-4cda-8059-a0c4090a344e.png)
+
+
+```python
+# count()
+s = "python is very Easy."
+s = s.lower()
+# 'e'문자는 몇번 들었을까?
+s.count('e')
+```
+
+
+
+
+    2
+
+
+
+
+```python
+#find(),index() 문자를 찾아 위치 반환
+#int(input()): input값이 문자열이기 때문에 int로 형변환
+input_str = input("찾는 단어를 입력하시오! >>")
+result = s.find(input_str)
+# find()는 없는 단어를 찾을 때 -1을 반환한다(error x)
+if result == -1:
+    print("해당 단어는 없습니다!")
+else:
+    print(result)
+```
+
+    찾는 단어를 입력하시오! >> z
+
+
+    해당 단어는 없습니다!
+
+
+
+```python
+s.index('z')
+# index()는 없는 단어를 찾을 때 error 가 발생한다.
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[36], line 1
+    ----> 1 s.index('z')
+
+
+    ValueError: substring not found
+
+
+
+```python
+#strip(): 양쪽 공백 제거
+s2 = "   첫 날 수고가 많아요!   "
+print(s2.strip()[0])
+print(s2.lstrip())
+print(s2.rstrip())
+```
+
+    첫
+    첫 날 수고가 많아요!   
+       첫 날 수고가 많아요!
+
+
+
+```python
+s2.lstrip()
+```
+
+
+
+
+    '첫 날 수고가 많아요!   '
+
+
+
+
+```python
+#replace(): 특정 값을 찾아서 바꿔주는 함수(기능)
+# 수고가 -> 고생이
+s3 = s2.replace('수고가', '고생이')
+s2
+s3
+# 함수(기능)이 궁금할 때에는 shift + Tab 이 설명해준다.
+```
+
+
+
+
+    '   첫 날 고생이 많아요!   '
+
+
+
+
+```python
+type(s2)
+isinstance(s2,str)
+```
+
+
+
+
+    True
+
+
+
+
+```python
+'   1'.strip()
+```
+
+
+
+
+    '1'
+
+
+
+
+```python
+#splilt(): 특정 문자를 기준으로 데이터를 분리해서 리스트로 반환하는 기능
+s.split('')
+s.split('.')
+```
+
+
+
+
+    ['python is very easy', '']
+
+
+
+![image.png](113996a2-23e4-4810-94d3-ce0dcf38424d.png)
+
+
+```python
+article = "[요기요, 화이트데이 맞이 '선물하기' 이벤트 진행] 기사입력 2024.03.10. 작성자 이나영기자 요기요는 화이트데이를 앞두고 요기요 선물하기 서비스를 이용하는 고객들을 위한 ‘너와 나의 선물고리’ 이벤트를 진행한다고 10일 밝혔다."
+start = article.find("2024")
+end = article.find("0.")
+day = article[35:45]
+print(f"기사가 업로드된 일자는 {day}입니다.")
+```
+
+    기사가 업로드된 일자는 2024.03.10입니다.
+
+
+
+```python
+
+```

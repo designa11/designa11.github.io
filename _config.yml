@@ -240,6 +240,7 @@ click_to_top:
 # Build settings
 # highlighter: none
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
 

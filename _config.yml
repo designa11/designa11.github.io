@@ -162,7 +162,7 @@ night_mode: "on"
 # Page default value
 defaults:
   home:
-    heading: "준피의 AI 설계 / 개발 로그 "
+    heading: "JunP's AI Blog"
     subheading: "AI / SmartFactor / Backend / data_analyis"
     banner: "assets/images/banners/sexssex.png"
 

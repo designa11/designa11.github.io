@@ -51,11 +51,11 @@ plt.show()
 
 - style option 
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/1.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/1.png?raw=true)
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/2.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/2.png?raw=true)
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/3.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/3.png?raw=true)
 
 ```python
 plt.figure(figsize = (5,4)) #(x크기,y크기)
@@ -194,9 +194,9 @@ plt.legend()
 plt.grid(axis = 'both')
 ```
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/4.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/4.png?raw=true)
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/5.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/5.png?raw=true)
 
 ```python
 # from matplotlib import font_manager as fm
@@ -313,7 +313,7 @@ plt.hist(a, bins = 200) #막대그래프                  bins  = 구간의 개�
 plt.show()
 ```
 
-![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/pandas/plt/6.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/6.png?raw=true)
 
 ```python
 ntdata = pd.read_csv('./data/기온데이터(19992023).csv', encoding = 'euc-kr', skiprows = range(0,7), delimiter = ",")

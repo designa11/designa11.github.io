@@ -27,6 +27,9 @@ y
 plt.plot(x,y)
 plt.show
 ```
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/1.png?raw=true)
+
+
 
 - score 데이터 선 그래프로 시각화해보기
 
@@ -48,6 +51,10 @@ plt.show()
 plt.plot(x,y)
 plt.show()
 ```
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/2.png?raw=true)
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/3.png?raw=true)
+
+
 
 - style option 
 
@@ -63,6 +70,9 @@ plt.plot(x,y,marker = "*",ms = 20, mec = 'r', ls = "-.")
 # plt.show # plt.show (이미지 자체를 출력해줌 ( 안쓰면 뭔 글자랑 같이나옴))
 plt.show()
 ```
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/4.png?raw=true)
+
+
 
 ```python
 score= pd.read_csv('./data/score.csv', encoding = 'euc-kr')
@@ -84,9 +94,14 @@ plt.legend()
 plt.show()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/5.png?raw=true)
+
+
 ```python
 plt.plot(x,y4,x,y3,x,y2,x,y, marker = "o",label = '4class')
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/6.png?raw=true)
 
 - 한국어 글꼴 인식하게 설정
 
@@ -117,6 +132,9 @@ for i in score.columns[1:]:
 plt.legend(loc = "best")
 plt.show()
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/7.png?raw=true)
+
 
 - 장래 인구 변동 데이터를 이용하여 시각화 (출처 : 국가 통계포털 사이트 제공)
 
@@ -194,6 +212,10 @@ plt.legend()
 plt.grid(axis = 'both')
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/8.png?raw=true)
+
+
+
 ![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/4.png?raw=true)
 
 ![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/5.png?raw=true)
@@ -224,6 +246,10 @@ plt.savefig('./data/국가통계_요인별_장래인구동향.png', dpi = 300, b
 # plt.show()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/9.png?raw=true)
+
+
+
 ```python
 x = range(2020,2071,10) # x = range(2020,2071,10)
 birth = data.loc["출생아수(천명)"] # data.iloc[1]
@@ -239,6 +265,9 @@ plt.grid()
 plt.xticks(range(2020,2071,5)); plt.yticks(range(150,751,50))
 plt.show()
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/10.png?raw=true)
+
 
 #### 기온 데이터 실습
 - 데이터 불러오기
@@ -283,12 +312,18 @@ plt.grid()
 tdata['평균기온(℃)'].describe()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/11.png?raw=true)
+
+
 ```python
 # 2. 내 생일 날짜의 평균 기온 시각화해보기
 plt.plot(tdata['평균기온(℃)'][tdata['날짜'].str[6:] == '04-24'])
 plt.show()
 
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/12.png?raw=true)
+
 
 ```python
 #2. Ans
@@ -297,6 +332,9 @@ y = tdata[tdata['일자']== '04-24'].loc[:,'평균기온(℃)']
 plt.plot(y)
 plt.show
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/13.png?raw=true)
+
 
 #### histogram(히스토그램)
 - 수치데이터를 범위로 설정하여 빈도수 값을 표현하는 그래프
@@ -313,6 +351,9 @@ plt.hist(a, bins = 200) #막대그래프                  bins  = 구간의 개�
 plt.show()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/14.png?raw=true)
+
+
 ![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/6.png?raw=true)
 
 ```python
@@ -328,6 +369,9 @@ plt.hist(ntdata['최저기온(℃)'][month == a], bins = 100, alpha = 0.5)
 
 plt.show()
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/15.png?raw=true)
+
 
 #### Bar Plot(범주데이터 시각화)
 - 카테고리의 개수(빈도)를 셀 때 사용하는 그래프
@@ -349,6 +393,10 @@ for i in range(len(bar_x)):
 plt.show()
 
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/16.png?raw=true)
+
+
 
 ```python
 eco = pd.read_csv('./data/시도_성별_경제활동인구_총괄_KOSIS_2022.csv', encoding= 'euc-kr')
@@ -431,6 +479,9 @@ plt.title('시도별 고용룰 평균 시각화')
 plt.show()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/17.png?raw=true)
+
+
 ```python
 import seaborn as sns
 plt.figure(figsize=(10,5))
@@ -442,6 +493,9 @@ plt.xticks(rotation = 45)
 plt.title('시도별 고용룰 평균 시각화')
 plt.show()
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/18.png?raw=true)
+
 
 #### Scatter, Pie
 
@@ -458,6 +512,9 @@ plt.show()
 
 #사고 위치 데이터를 기반으로 점(데이터 포인트)을 찍어본다.
 ```
+
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/19.png?raw=true)
+
 
 ```python
 #pie plot
@@ -479,3 +536,4 @@ plt.pie(y2,labels=x, autopct='%.2f%%', colors= ['r','g','b'], explode=[1,0,0])
 plt.show()
 ```
 
+![image.png](https://github.com/designa11/designa11.github.io/blob/master/assets/images/plt/babo/20.png?raw=true)

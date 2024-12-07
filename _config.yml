@@ -162,8 +162,8 @@ night_mode: "on"
 # Page default value
 defaults:
   home:
-    heading: "JunP's AI Blog"
-    subheading: "AI / SmartFactor / Backend / data_analyis"
+    heading: "JuP's Backend Blog"
+    subheading: "Backend, FastAPI"
     banner: "assets/images/banners/opo.png"
 
 # Banner default settings
